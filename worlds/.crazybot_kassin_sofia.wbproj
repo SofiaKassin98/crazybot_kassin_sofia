@@ -9,3 +9,4 @@ selectionDisabled: 0
 viewpointLocked: 0
 orthographicViewHeight: 1
 textFiles: 0 "../../../../usr/local/webots/projects/robots/k-team/khepera3/controllers/khepera3_gripper/khepera3_gripper.c"
+globalOptionalRendering: CoordinateSystem::JointAxes
