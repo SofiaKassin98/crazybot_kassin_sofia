@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.0348476829829433 -0.9990308579040058 -0.026888360796197146 5.2488177760071535
-  position 0.8481257423090134 0.08733081728999226 0.3889779134566958
+  orientation 0.9858683065611618 0.16374513846176803 -0.03537247161796161 6.150651892382285
+  position 0.24519984010896465 0.03769858324424631 0.9323820451989612
 }
 TexturedBackground {
 }
@@ -97,6 +97,25 @@ Robot {
         physics Physics {
         }
       }
+    }
+    DistanceSensor {
+      translation 0.125 0 0
+      children [
+        DEF D_SENSOR Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      boundingObject USE D_SENSOR
+      lookupTable [
+        0 0 0
+        0.02 0 0
+        5 1660 0
+      ]
+      resolution 0.03
     }
   ]
   boundingObject USE SH_BODY

@@ -12,6 +12,7 @@
  */
 #include <webots/robot.h>
 #include <webots/motor.h>
+#include <webots/keyboard.h>
 /*
  * You may want to add macros here.
  */
