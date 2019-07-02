@@ -2,14 +2,15 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.9858683065611618 0.16374513846176803 -0.03537247161796161 6.150651892382285
-  position 0.24519984010896465 0.03769858324424631 0.9323820451989612
+  orientation 0.8711627503839493 0.4907355827248871 -0.01593895200878555 6.147436636064877
+  position 0.08528986556032117 0.12719988827021925 3.0336218243866133
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
+  size 100 100
 }
 Robot {
   translation 0 0.07999999999999997 0
@@ -115,7 +116,7 @@ Robot {
         0.02 0 0
         5 1660 0
       ]
-      resolution 0.03
+      resolution 1
     }
   ]
   boundingObject USE SH_BODY
