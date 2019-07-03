@@ -12,11 +12,22 @@
  */
 #include <webots/robot.h>
 #include <webots/motor.h>
+#include <webots/position_sensor.h>
+#include <webots/distance_sensor.h>
 #include <webots/keyboard.h>
+
+//libreria para escribir en pantalla y operaciones matematicas
+#include <stdio.h>   
+#include <math.h>  
+
 /*
  * You may want to add macros here.
  */
 #define TIME_STEP 64
+#define PI 3.141592
+//quiero que se detenga a esta distancia  
+#define OBSTACLE DISTANCE 40  
+
 
 /*
  * This is the main program.
@@ -26,7 +37,12 @@
 int main(int argc, char **argv)
 {
   /* necessary to initialize webots stuff */
+  //INICIALIZANDO EL ROBOT Y EL KEYBOARD
   wb_robot_init();
+  wb_keyboard_enable(TIME_STEP);
+  
+  int key;
+  float distance_sensor;
 
   /*
    * You should declare here WbDeviceTag variables for storing
@@ -41,6 +57,11 @@ int main(int argc, char **argv)
    * and leave the loop when the simulation is over
    */
   while (wb_robot_step(TIME_STEP) != -1) {
+  
+  //lee la tecla que presione y la guarda en la variable key
+  key=wb_keyboard_get_key();
+  
+  
 
     /*
      * Read the sensors :
