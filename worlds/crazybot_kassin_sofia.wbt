@@ -55,6 +55,7 @@ Robot {
         }
         PositionSensor {
           name "pos_right"
+          resolution 0.0052359
         }
       ]
       endPoint Solid {
@@ -91,6 +92,7 @@ Robot {
         }
         PositionSensor {
           name "pos_left"
+          resolution 0.0052359
         }
       ]
       endPoint Solid {
