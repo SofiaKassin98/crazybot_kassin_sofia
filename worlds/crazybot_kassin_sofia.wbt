@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.1991255771998053 0.9793795397543272 -0.03412801804157728 6.152842573533809
-  position 0.12563250561649955 0.020131857685744894 0.7576217855394698
+  orientation -0.26940565169581865 0.9608474378528019 -0.06475180311047007 6.15702862432914
+  position 0.07878101938704334 0.034401478995159024 0.8592898843301312
 }
 TexturedBackground {
 }
@@ -54,7 +54,7 @@ Robot {
           maxTorque 0.5931
         }
         PositionSensor {
-          name "position_sensor"
+          name "pos_right"
         }
       ]
       endPoint Solid {
@@ -88,6 +88,9 @@ Robot {
           name "motor_left"
           maxVelocity 52.3598
           maxTorque 0.5931
+        }
+        PositionSensor {
+          name "pos_left"
         }
       ]
       endPoint Solid {
@@ -123,4 +126,5 @@ Robot {
       resolution 1
     }
   ]
+  controller "crazybot"
 }
