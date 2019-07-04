@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.26940565169581865 0.9608474378528019 -0.06475180311047007 6.15702862432914
-  position 0.07878101938704334 0.034401478995159024 0.8592898843301312
+  orientation -0.0914611660756962 0.9946928371040111 -0.04712764490240282 6.131090628901019
+  position 0.07604663232503102 0.036226011469302856 0.8590047615433163
 }
 TexturedBackground {
 }
@@ -117,7 +117,6 @@ Robot {
         }
       ]
       name "distance_sensor"
-      boundingObject USE D_SENSOR
       lookupTable [
         0 0 0
         0.02 0 0
@@ -126,5 +125,10 @@ Robot {
       resolution 1
     }
   ]
+  boundingObject USE SH_BODY
+  physics Physics {
+    density -1
+    mass 1
+  }
   controller "crazybot"
 }
